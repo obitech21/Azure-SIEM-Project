@@ -44,7 +44,7 @@ I deleted the old inbound security rule and added a new one. The new rule allowe
 ![6](https://github.com/obi298/Azure-SIEM-Project/assets/90945162/2f24f0ef-afd9-4ac9-a7dd-f832de90a293)
 
 
-Here, I created a new log analytics workspace. The logs contained geographic data from the virtual machine and were used to create a data visualization of the attacks.
+Here, I created a new log analytics workspace. 
 
 
 ![9](https://github.com/obi298/Azure-SIEM-Project/assets/90945162/38d0b709-fb87-4121-9306-a61f424f283e)
