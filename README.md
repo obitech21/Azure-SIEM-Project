@@ -28,12 +28,6 @@ I created a virtual machine and chose Windows 10 as my image. I intentionally ma
 
 # Configuring VM Security Rules:
 
-I created a username and password for this VM and configured the port rules in order to make this virtual machine vulnerable to attackers.
-
-![2](https://github.com/obi298/Azure-SIEM-Project/assets/90945162/b7649092-2d43-455b-b0a5-e7d72227cb43)
-
-
-
 I added a new security group and configured the network settings to make the virtual machine vulnerable and discoverable to attackers.
 
 ![3](https://github.com/obi298/Azure-SIEM-Project/assets/90945162/2af7b607-c5cd-43ac-a0cc-ff04f3608f46)
