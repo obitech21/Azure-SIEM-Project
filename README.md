@@ -19,12 +19,12 @@ In the modern era of technology, companies are heavily relying on their IT infra
 
 # Creating Virtual Machine:
 
-I created a virtual machine and chose Windows 10 as my image. I intentionally made this VM vulnerable so that it can be discoverable to the whole world. I used Windows 10 Pro as my Image. I also selected the region for my virtual machine.
+I created a virtual machine and chose Windows 10 as my image. I intentionally made this VM vulnerable so that it can be discoverable to the whole world. I used Windows 10 Pro as my Image. I also selected the region for my virtual machine. This virtual machine was used as a honeypot to attract attackers from all over the world. I used this VM to capture failed login events from attackers and collect global data.
 
 # ![1](https://github.com/obi298/Azure-SIEM-Project/assets/90945162/72d5bfba-542e-480c-8307-f9046a647748)
 
 
-This virtual machine was used as a honeypot to attract attackers from all over the world. I used this VM to capture failed login events from attackers and collect global data.
+
 
 # Configuring VM Security Rules:
 
