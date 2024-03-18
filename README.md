@@ -55,17 +55,7 @@ Here, I created a new log analytics workspace. The logs contained geographic dat
 
 I then went to Microsoft Defender for Cloud So that I can select a subscription plan for cloud services management and servers.
 
-![7](https://github.com/obi298/Azure-SIEM-Project/assets/90945162/40fd62a9-6434-4dba-a456-8085729c1a64)
 
-
-![8](https://github.com/obi298/Azure-SIEM-Project/assets/90945162/7b57f00b-4bb1-41c8-896d-be097263cd8a)
-
-
-
-![9](https://github.com/obi298/Azure-SIEM-Project/assets/90945162/38d0b709-fb87-4121-9306-a61f424f283e)
-
-
-![10](https://github.com/obi298/Azure-SIEM-Project/assets/90945162/1f5044c1-e262-46d6-817d-d014f1b4fb06)
 
 
 
