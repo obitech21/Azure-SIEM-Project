@@ -47,13 +47,24 @@ I deleted the old inbound security rule and added a new one. The new rule allowe
 
 ![5](https://github.com/obi298/Azure-SIEM-Project/assets/90945162/50a0788e-d3b6-474d-9e40-a526c051b8ed)
 
-
-Here, I created a new log analytics workspace. The logs contained geographic data from the virtual machine and were used to create a data visualization of the attacks.
-
 ![6](https://github.com/obi298/Azure-SIEM-Project/assets/90945162/2f24f0ef-afd9-4ac9-a7dd-f832de90a293)
 
 
-I then went to Microsoft Defender for Cloud So that I can select a subscription plan for cloud services management and servers.
+Here, I created a new log analytics workspace. The logs contained geographic data from the virtual machine and were used to create a data visualization of the attacks.
+
+
+![9](https://github.com/obi298/Azure-SIEM-Project/assets/90945162/38d0b709-fb87-4121-9306-a61f424f283e)
+
+
+
+I went to the settings and enabled data collection for all events ich allowed the virtual machine to capture data from attacks.
+
+
+![12](https://github.com/obi298/Azure-SIEM-Project/assets/90945162/856033db-ad15-44cb-aabd-11514a9d131a)
+
+
+
+
 
 
 
