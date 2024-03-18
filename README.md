@@ -24,6 +24,16 @@ I created a virtual machine and chose Windows 10 as my image. I intentionally ma
 # ![1](https://github.com/obi298/Azure-SIEM-Project/assets/90945162/72d5bfba-542e-480c-8307-f9046a647748)
 
 
+This virtual machine was used as a honeypot to attract attackers from all over the world. I used this VM to capture failed login events from attackers and collect global data.
+
+# Configuring VM Security Rules:
+
+I created a username and password for this VM and configured the port rules in order to make this virtual machine vulnerable to attackers.
+
+
+
+
+
 
 
 
