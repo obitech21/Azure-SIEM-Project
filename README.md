@@ -57,7 +57,7 @@ Here, I created a new log analytics workspace. The logs contained geographic dat
 
 
 
-I went to the settings and enabled data collection for all events ich allowed the virtual machine to capture data from attacks.
+I went to the settings and enabled data collection for all events which allowed the virtual machine to capture data from attacks.
 
 
 ![12](https://github.com/obi298/Azure-SIEM-Project/assets/90945162/856033db-ad15-44cb-aabd-11514a9d131a)
