@@ -20,6 +20,9 @@
 
 # I created a virtual machine and chose Windows 10 as my image. I intentionally made this VM vulnerable so that it can be discoverable to the whole world. I used Windows 10 Pro as my Image. I selected the South Central US region as the closest data center for my virtual machine.
 
+# ![1](https://github.com/obi298/Azure-SIEM-Project/assets/90945162/72d5bfba-542e-480c-8307-f9046a647748)
+
+
 
 
 
