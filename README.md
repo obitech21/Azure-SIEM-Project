@@ -32,6 +32,9 @@ The purpose of this project was to learn the basics of Azure SIEM tools and use 
 - Windows 10 OS
 - Windows PowerShell ISE
 
+<br>
+<br>
+<br>
 
 # Creating Virtual Machine:
 
