@@ -11,7 +11,8 @@ In this project, I created a VM from Azure and used it as a honeypot to expose i
 
 <br>
 <br>
-
+<br>
+<br>
 
 # Purpose
 The purpose of this project was to learn the basics of Azure SIEM tools and use them to track down malicious attackers from around the globe. I have documented all the steps I have taken in order to successfully complete this project.
@@ -35,8 +36,9 @@ The purpose of this project was to learn the basics of Azure SIEM tools and use 
 <br>
 <br>
 <br>
+<br>
 
-# Creating Virtual Machine:
+# Creating Virtual Machine
 
 I created an Azure virtual machine and chose Windows 10 as my image. I intentionally made this VM vulnerable and used it as a honeypot to attract attackers from all over the world. 
 <br>
@@ -47,10 +49,10 @@ I created an Azure virtual machine and chose Windows 10 as my image. I intention
 <br>
 <br>
 <br>
+<br>
 
 
-
-# Configuring VM Security Rules:
+# Configuring VM Security Rules
 <br>
 
 I created a username and password that was used to login to the virtual machine. I also set the RDP to port 3389 in order for the virtual machine to be exposed to attackers.
@@ -127,17 +129,20 @@ I connected the new workspace to the VM, which allowed Azure to capture log data
 
   <img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/84ff3d32-86c1-4087-87ae-761d659e8b78 " alt="" width="650" height="500">
 
-
+<br>
+<br>
 <br>
 <br>
 
+# Observing Logs in Windows Event Viewer
+<br>
 
 After connecting Sentinel to my log analytics workspace, I used my public IP address to connect to the VM using RDP. 
 
 <br>
 <br>
 
- <img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/3defdbb1-1424-4512-96c9-b44025dfa44f" alt="" width="550" height="350">
+ <img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/3defdbb1-1424-4512-96c9-b44025dfa44f" alt="" width="500" height="300">
 
  <br>
  <br>
@@ -158,17 +163,122 @@ After successfully logging into the VM, I went to Windows Event Viewer. I was ab
 <br>
 <br>
 
-<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/51ef50d9-aa25-454e-a255-787b64e43e5d" alt="" width="550" height="450">
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/51ef50d9-aa25-454e-a255-787b64e43e5d" alt="" width="600" height="500">
+
+<br>
+<br>
+<br>
+<br>
+
+# Collect Geographic Data from IP Address
+<br>
+I decided to click on one of the logs to get for information. Each log contains information such as event ID, account name, failure information, and network information.
+
+
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/087f1b18-1468-4601-90fa-cfdda3a7f9d7" alt="" width="550" height="650">
 
 <br>
 <br>
 <br>
 
-I decided to click on one of the logs to get for information. Each log contains information such as event ID, failure reason, and network information.
+I took the IP address from the log and entered it in a 3rd party API in order to collect geographic data. I collected geographic information from this website: www.ipgeolocation.io. 
+
+<br>
+
+I was able to see information such as country, state, time zone, and currency. I used this information to create my own log and sent that log into my log analytics workspace. 
+
+ <img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/c2a6d87b-2d23-4525-bf6a-77acabadd256" alt="" width="520" height="410">
+
+ <br>
+ <br>
+ <br>
+<br>
+
+ # Configure Firewall Settings
+ <br>
+
+In this step, I turned off the firewall settings in order to make the VM more vulnerable to attackers. I made sure that the firewall was disabled from the domain, private, and public profile. I wanted to make the VM as vulnerable as possible in order for attackers to discover it.
+
+<br>
+
+ <img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/1cf3c530-70aa-42eb-8c40-00b1082fa77d" alt="" width="620" height="510">
+
+<br>
+
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/6b24c20a-b20f-4727-99ee-5c3aa5adf840" alt="" width="450" height="510">
+
+<br>
+<br>
 
 
- <img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/087f1b18-1468-4601-90fa-cfdda3a7f9d7" alt="" width="550" height="650">
+After configuring the firewall settings, I tested the virtual machine's connectivity by pinging it from the local machine. I also tested the connection before configuring the firewall settings. The virtual machine was able to communicate with the local machine after disabling the firewalls.
 
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/9687b95b-331a-42a2-a538-3428f8316ec2" alt="" width="650" height="400">
+<br>
+<br>
+<br>
+<br>
 
+# Collect Geographic Data from Attackers
+
+<br>
+
+I copied a PowerShell script from Josh Madokor that was used to collect geographic data from failed login event logs and create a log file.
+
+<br>
+
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/b09ce001-dab5-4009-8474-9dd8ffd955d5" alt="" width="700" height="450">
+
+<br>
+<br>
+<br>
+
+After copying the script, I pasted it on Powershell ISE.
+
+<br>
+
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/7a07b8ef-6f5f-4570-ba7a-85599f27296a" alt="" width="850" height="700">
+
+<br>
+<br>
+<br>
+
+I generated an API key from the 3rd party API in order for the script to work with the API.
+
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/247f8e0f-2716-4a06-befe-e216597af8e1" alt="" width="650" height="320">
+
+<br>
+<br>
+<br>
+
+Entering the API key in the PowerShell script allowed the script to collect geographic data from attackers that were attempting to login to the virtual machine.
+
+<br>
+<br>
+<br>
+
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/d7cb1af5-a279-4793-aea4-fcfc6b168ef5" alt="" width="770" height="320">
+
+<br>
+<br>
+<br>
+
+After entering the API key, I ran the PowerShell script. The script was able to collect data from the API and WIndows Event Viewer. After running the script, I noticed that each error log contained a username, sourcehost, and destination host. 
+
+<br>
+<br>
+<br>
+
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/55fbafa3-e80d-44cf-9204-83b7f7b890dc" alt="" width="700" height="520">
+
+<br>
+<br>
+<br>
+
+After executing the script, I saved the log file of the error logs in a text document in order to put it in my Log Analytics workspace. I then created a custom log in order to put the geographic data in my log analytics workspace.
+
+<br>
+
+![53](https://github.com/obi298/Azure-SIEM-Project/assets/90945162/3d75da6c-22c3-472e-b86e-a6dcb0cb3431)
 
 
