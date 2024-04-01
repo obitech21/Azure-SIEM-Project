@@ -275,10 +275,150 @@ After entering the API key, I ran the PowerShell script. The script was able to 
 <br>
 <br>
 
-After executing the script, I saved the log file of the error logs in a text document in order to put it in my Log Analytics workspace. I then created a custom log in order to put the geographic data in my log analytics workspace.
+# Custom Log and Field Extraction
+<br>
+<br>
+
+After executing the script, I copied the data from my virtual machine and pasted the data in a text document on my local machine. I then saved the data on my local machine and created a custom log in order to put the geographic data in my log analytics workspace.
 
 <br>
 
-![53](https://github.com/obi298/Azure-SIEM-Project/assets/90945162/3d75da6c-22c3-472e-b86e-a6dcb0cb3431)
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/3d75da6c-22c3-472e-b86e-a6dcb0cb3431" alt="" width="600" height="520">
+
+<br>
+<br>
+<br>
+
+During the custom log creation, I noticed that the data was successfully parsed from the failed event log file. 
+
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/f2377aea-2cd2-46eb-a085-62dcf8d07ac5" alt="" width="600" height="520">
+<br>
+<br>
+<br>
+
+After completing the custom log setup, I ran the failed event log file in the KUSTO interpreter.
+
+<br>
+<br>
+
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/e39bbb65-d839-44c9-8e8f-7ac9f1a4887c" alt="" width="700" height="420">
+
+<br>
+<br>
+
+I clicked on one of the log entries and extracted each field from it.
+
+<br>
+<br>
+
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/5443e888-2b74-4c76-bd19-85d1023bb3bc" alt="" width="700" height="400">
+
+<br>
+<br>
+<br>
+
+I highlighted the values from each field and labeled them. I also selected the correct field type before saving the extraction. Because latitude had a numeric value, the field type was set to numeric. 
+
+<br>
+<br>
+
+ <img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/dc71d7b9-65f4-4f85-8f9e-ee4dc1f4939a" alt="" width="700" height="500">
+
+<br>
+<br>
+<br>
+
+After the latitude field, I repeated the same process for all of the other fields. 
+
+<br>
+<br>
+
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/faec8c7f-2127-43ac-be99-d0c89f24baae" alt="" width="900" height="350">
+
+
+<br>
+<br>
+<br>
+
+# Attack Map Creation
+
+After fully extracting all of the fields from the log data, I finally had everything setup to create an attack map. I first created a workbook from Microsoft Sentinel. In that workbook, I ran this query:
+
+```
+failed_rdp_geo_CL| summarize event_count=count() by sourcehost_CF, latitude_CF, longitude_CF, country_CF, label_CF, destinationhost_CF
+| where destinationhost_CF != "samplehost" | where sourcehost_CF != ""
+```
+<br>
+<br>
+<br>
+
+ <img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/0313972a-9299-4437-a5dc-7ad7927e57e0" alt="" width="980" height="480">
+
+<br>
+<br>
+<br>
+
+I then clicked on Visualization and changed it to "Map."
+
+<br>
+<br>
+
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/411f3297-793d-4d9e-bf54-37bfba0f1522" alt="" width="550" height="490">
+
+<br>
+<br>
+<br>
+
+Finally, I made sure to put the right latitude, longitude, and label for the map. I noticed that the attacks on the map were coming from Russia and Brazil. I decided to wait a little more to see if more attacks would show up.
+
+<br>
+<br>
+<br>
+
+
+ <img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/4e4bf79e-fefc-4439-9537-d27e3de84805" alt="" width="850" height="500">
+
+<br>
+<br>
+<br>
+
+After waiting some time, I discovered that more attacks appeared on the map from different countries. 
+
+<br>
+<br>
+<br>
+
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/c8a62139-51b4-4a17-941c-6642d7d252e2" alt="" width="850" height="550">
+
+<br>
+<br>
+<br>
+
+After waiting again, I noticed even more attacks. 
+
+<br>
+<br>
+<br>
+
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/e61cf2a4-fd3f-4bc0-8eeb-0ababf4a6670" alt="" width="900" height="500">
+
+<br>
+<br>
+<br>
+
+That concludes my project.
+
+
+# Conclusion
+
+<br>
+
+The purpose of this project was for me to gain hands-on experience with using SIEM tools. This project really helped me learn more about the services in Azure and how they can be used in real world scenarios. This project helped me to gain a better understanding of SIEM tools.
+
+
+
+
+
+
 
 
