@@ -9,14 +9,6 @@ In the modern era of technology, companies are heavily relying on their IT infra
 
 In this project, I created a VM from Azure and used it as a honeypot to expose it to the world for attackers to discover it. I collected log data from the VM by using a PowerShell Script and a Third-Party Geographic Data API and transferred that data back to Azure to create a map of the attacks from around the world. I then was able to analyze where the attacks were coming from and take note of the number of failed login attempts from different regions.
 
-<br>
-<br>
-<br>
-<br>
-
-# Purpose
-The purpose of this project was to learn the basics of Azure SIEM tools and use them to track down malicious attackers from around the globe. I have documented all the steps I have taken in order to successfully complete this project.
-
 
 <br>
 <br>
@@ -413,8 +405,8 @@ That concludes my project.
 
 <br>
 
-The purpose of this project was for me to gain hands-on experience with using SIEM tools. This project really helped me learn more about the services in Azure and how they can be used in real world scenarios. This project helped me to gain a better understanding of SIEM tools.
-
+The purpose of this project was for me to gain hands-on experience with using SIEM tools. I learned the basics of using SIEM tools for real-time event analysis and advanced analytics. I also gained a better understanding of the services in Azure and how they can be used in real world scenarios.
+ 
 
 
 
