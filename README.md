@@ -392,7 +392,7 @@ After waiting again, I noticed even more attacks.
 <br>
 <br>
 
-<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/e61cf2a4-fd3f-4bc0-8eeb-0ababf4a6670" alt="" width="900" height="500">
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/e61cf2a4-fd3f-4bc0-8eeb-0ababf4a6670" alt="" width="850" height="450">
 
 <br>
 <br>
