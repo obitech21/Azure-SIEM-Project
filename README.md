@@ -409,15 +409,17 @@ The purpose of this project was for me to gain hands-on experience with using SI
 
 # Sources
 
-Microsoft Azure Portal
+**Microsoft Azure Portal:**
+
 https://portal.azure.com
 
 
-Microsoft Sentinel Documentation
+**Microsoft Sentinel Documentation:**
+
 https://learn.microsoft.com/en-us/azure/sentinel/
 
 
-Josh Madokor SIEM Tutorial:
+**Josh Madokor SIEM Tutorial:**
 
 https://www.youtube.com/watch?v=RoZeVbbZ0o0
  
