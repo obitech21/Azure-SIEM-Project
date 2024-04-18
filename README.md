@@ -406,6 +406,20 @@ That concludes my project.
 <br>
 
 The purpose of this project was for me to gain hands-on experience with using SIEM tools. I learned the basics of using SIEM tools for real-time event analysis and advanced analytics. I also gained a better understanding of the services in Azure and how they can be used in real world scenarios.
+
+# Sources
+
+Microsoft Azure Portal
+https://portal.azure.com
+
+
+Microsoft Sentinel Documentation
+https://learn.microsoft.com/en-us/azure/sentinel/
+
+
+Josh Madokor SIEM Tutorial:
+
+https://www.youtube.com/watch?v=RoZeVbbZ0o0
  
 
 
