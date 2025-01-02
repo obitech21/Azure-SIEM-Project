@@ -419,9 +419,6 @@ https://portal.azure.com
 https://learn.microsoft.com/en-us/azure/sentinel/
 
 
-**Josh Madokor SIEM Tutorial:**
-
-https://www.youtube.com/watch?v=RoZeVbbZ0o0
  
 
 
