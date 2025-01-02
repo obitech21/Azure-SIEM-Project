@@ -411,14 +411,12 @@ After waiting again, I noticed even more attacks.
 <br>
 <br>
 
-That concludes my project.
-
 
 # Conclusion
 
 <br>
 
-The purpose of this project was for me to gain hands-on experience with using SIEM tools. I learned the basics of using SIEM tools for real-time event analysis and advanced analytics. I also gained a better understanding of the services in Azure and how they can be used in real world scenarios.
+In this project, I learned the basics of using SIEM tools for real-time event analysis and advanced analytics. I also gained a better understanding of the services in Azure and how they can be used in real world scenarios.
 
 
 
