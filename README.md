@@ -7,7 +7,7 @@
 
 In the modern era of technology, companies are heavily relying on their IT infrastructure in order to do their everyday tasks. And of course in the world of technology, it is important that companies are up to date on their security. Companies use SIEM (Security Information and Event Management) tools to monitor suspicious events within the work environment. In today’s era, SIEM tools are in higher demand due to cybersecurity threats evolving day by day. These tools allow security professionals to perform real-time analysis of the IT infrastructure and monitor the overall health of machines within an organization.
 
-In this project, I created a VM from Azure and used it as a honeypot to expose it to the world for attackers to discover it. I collected log data from the VM by using a PowerShell Script and a Third-Party Geographic Data API and transferred that data back to Azure to create a map of the attacks from around the world. I then was able to analyze where the attacks were coming from and take note of the number of failed login attempts from different regions.
+In this project, I created a VM from Azure and used it as a honeypot to expose it to the world for attackers to discover it. I collected log data from the VM by using a PowerShell Script and a Geographic Data API and transferred that data back to Azure to create a map of the attacks from around the world. I then was able to analyze where the attacks were coming from and take note of the number of failed login attempts from different regions.
 
 
 <br>
@@ -36,7 +36,7 @@ https://learn.microsoft.com/en-us/azure/sentinel/
 - Log Analytics Workspace
 - Windows PowerShell ISE
 - Custom [PowerShell script] (https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1) (from Josh Madokor)
-- Geolocation API: https://www.ipgeolocation.io
+- Geographic Data API: https://www.ipgeolocation.io
 
 <br>
 <br>
