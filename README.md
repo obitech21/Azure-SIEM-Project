@@ -14,16 +14,29 @@ In this project, I created a VM from Azure and used it as a honeypot to expose i
 <br>
 <br>
 
+# Links
+
+**Microsoft Azure Portal:**
+
+https://portal.azure.com
+
+
+**Microsoft Sentinel Documentation:**
+
+https://learn.microsoft.com/en-us/azure/sentinel/
+
+<br>
+<br>
+<br>
 
 # Tools used for this project
 
 - Microsoft Azure
 - Microsoft Sentinel
 - Log Analytics Workspace
-- Windows 10 OS
 - Windows PowerShell ISE
-- PowerShell Script (from Josh Madokor)
-- Third Party Geographic API: https://www.ipgeolocation.io
+- Custom [PowerShell script] (https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1) (from Josh Madokor)
+- Geolocation API: https://www.ipgeolocation.io
 
 <br>
 <br>
@@ -32,7 +45,7 @@ In this project, I created a VM from Azure and used it as a honeypot to expose i
 
 # Creating Virtual Machine
 
-I created an Azure virtual machine and chose Windows 10 as my image. I intentionally made this VM vulnerable and used it as a honeypot to attract attackers from all over the world. 
+I created an Azure virtual machine and chose Windows 10 as my environment for this project. I intentionally made this VM vulnerable and used it as a honeypot to attract attackers from all over the world. 
 <br>
 <br>
 
@@ -47,7 +60,7 @@ I created an Azure virtual machine and chose Windows 10 as my image. I intention
 # Configuring VM Security Rules
 <br>
 
-I created a username and password that was used to login to the virtual machine. I also set the RDP to port 3389 in order for the virtual machine to be exposed to attackers.
+I created a username and password for the virtual machine. I also set the RDP to port 3389 in order for the virtual machine to be vulnerable.
 <br>
 <br>
 
@@ -173,11 +186,11 @@ I decided to click on one of the logs to get for information. Each log contains 
 <br>
 <br>
 
-I took the IP address from the log and entered it in a 3rd party API in order to collect geographic data. I collected geographic information from this website: www.ipgeolocation.io. 
+I took the IP address from the log and entered it in a 3rd party API in order to collect geographic data. I collected the geographic information from this website: www.ipgeolocation.io. 
 
 <br>
 
-I was able to see information such as country, state, time zone, and currency. I used this information to create my own log and sent that log into my log analytics workspace. 
+I used this information to create my own log and sent that log into my log analytics workspace. 
 
  <img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/c2a6d87b-2d23-4525-bf6a-77acabadd256" alt="" width="520" height="410">
 
@@ -215,7 +228,7 @@ After configuring the firewall settings, I tested the virtual machine's connecti
 
 <br>
 
-I copied a PowerShell script from Josh Madokor that was used to collect geographic data from failed login event logs and create a log file.
+I used a custom PowerShell script from Josh Madokor to create a log file of the failed login attempts.
 
 <br>
 
@@ -407,16 +420,7 @@ That concludes my project.
 
 The purpose of this project was for me to gain hands-on experience with using SIEM tools. I learned the basics of using SIEM tools for real-time event analysis and advanced analytics. I also gained a better understanding of the services in Azure and how they can be used in real world scenarios.
 
-# Sources
 
-**Microsoft Azure Portal:**
-
-https://portal.azure.com
-
-
-**Microsoft Sentinel Documentation:**
-
-https://learn.microsoft.com/en-us/azure/sentinel/
 
 
  
