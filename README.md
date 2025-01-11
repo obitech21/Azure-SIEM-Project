@@ -179,8 +179,9 @@ After successfully logging into the VM, I went to Windows Event Viewer. I was ab
 <br>
 I decided to click on one of the logs to get for information. Each log contains information such as event ID, account name, failure information, and network information.
 
+<br>
 
-<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/087f1b18-1468-4601-90fa-cfdda3a7f9d7" alt="" width="550" height="600">
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/087f1b18-1468-4601-90fa-cfdda3a7f9d7" alt="" width="450" height="500">
 
 <br>
 <br>
@@ -192,7 +193,7 @@ I took the IP address from the log and entered it in a 3rd party API in order to
 
 I used this information to create my own log and sent that log into my log analytics workspace. 
 
- <img src="https://github.com/user-attachments/assets/fac6cf7b-7959-4b7f-bd54-62ff4dd43563" alt="" width="520" height="380">
+ <img src="https://github.com/user-attachments/assets/fac6cf7b-7959-4b7f-bd54-62ff4dd43563" alt="" width="520" height="360">
 
  <br>
  <br>
