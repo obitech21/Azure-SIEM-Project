@@ -180,7 +180,7 @@ After successfully logging into the VM, I went to Windows Event Viewer. I was ab
 I decided to click on one of the logs to get for information. Each log contains information such as event ID, account name, failure information, and network information.
 
 
-<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/087f1b18-1468-4601-90fa-cfdda3a7f9d7" alt="" width="500" height="450">
+<img src="https://github.com/obi298/Azure-SIEM-Project/assets/90945162/087f1b18-1468-4601-90fa-cfdda3a7f9d7" alt="" width="500" height="400">
 
 <br>
 <br>
