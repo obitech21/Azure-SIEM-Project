@@ -189,12 +189,6 @@ I decided to click on one of the logs to get for information. Each log contains 
 
 I took the IP address from the log and entered it in a 3rd party API in order to collect geographic data. I collected the geographic information from this website: www.ipgeolocation.io. 
 
-<br>
-
-I used this information to create my own log and sent that log into my log analytics workspace. 
-
- <img src="https://github.com/user-attachments/assets/fac6cf7b-7959-4b7f-bd54-62ff4dd43563" alt="" width="520" height="360">
-
  <br>
  <br>
  <br>
