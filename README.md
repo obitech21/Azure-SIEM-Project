@@ -35,7 +35,7 @@ https://learn.microsoft.com/en-us/azure/sentinel/
 - Microsoft Sentinel
 - Log Analytics Workspace
 - Windows PowerShell ISE
-- Custom [PowerShell script](https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1) (from Josh Madokor)
+- Custom [PowerShell script](https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1) (from Josh Madakor)
 - Geographic Data API: https://www.ipgeolocation.io
 
 <br>
